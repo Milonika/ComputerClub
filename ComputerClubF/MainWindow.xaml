@@ -5,8 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ComputerClubF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="935" Width="1440">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="935" Width="1440"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                <GradientStop Color="#7367FF" Offset="0"/>
+                <GradientStop Color="#20264A" Offset="0.567"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="245"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="567*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200*"/>
+                <RowDefinition Height="734*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock  Text="User Name"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                        Foreground="White"
+                        FontSize="18">
+            </TextBlock>
+
+            <StackPanel Grid.Row="1">
+
+                <RadioButton Content="БРОН МЕСТА"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="18">
+                    
+                </RadioButton>
+                
+            </StackPanel>
+            
+        </Grid>
+
+    </Border>
 </Window>
